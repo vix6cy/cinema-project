@@ -193,3 +193,492 @@ option {
 .select-cinema {
     min-width: 470px;
 }
+
+.scheme {
+    border-radius: 10px;
+    background: rgba(36, 36, 36, 0.18);
+}
+
+.zalContainer svg:hover rect:not(.light) {
+    fill: rgba(255, 255, 255, 0.5);
+}
+
+.zalContainer svg:hover path:not(.light) {
+    stroke: rgba(255, 255, 255, 0.5);
+}
+
+.ZalMesta {
+    background: #621402;
+    padding-bottom: 100px;
+}
+
+.headerLeftAndRight {
+    width: 50%;
+}
+
+.headerLeftAndRight p:nth-child(1) {
+    color: #ffffff91;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+}
+
+.headerLeftAndRight h1 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 11px 0 23px 0;
+}
+
+.headerLeftAndRight p:nth-child(3) {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.TimeAndEvaluation {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    margin-top: 51px;
+    margin-bottom: 67px;
+}
+
+.TimeAndEvaluation div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.TimeAndEvaluation p {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.TimeAndEvaluation p span {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.play {
+    border-radius: 100px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all .3s;
+}
+
+.play:hover {
+    transform: scale(1.2);
+    transition: all .3s;
+}
+
+.TopHeadeInfo {
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+    margin-top: 50px;
+}
+
+.BottomHeadeInfo {
+    display: flex;
+    padding-bottom: 64px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+    justify-content: space-between;
+}
+
+.BottomHeadeInfoLeftDataEl {
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    width: 90px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.BottomHeadeInfoLeftData {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.imgMenu {
+    width: 80px;
+    display: none;
+    cursor: pointer;
+}
+
+.BottomHeadeInfoLeftDataEl p:nth-child(1) {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.BottomHeadeInfoLeftDataEl p:nth-child(2) {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.BottomHeadeInfoLeftDataEl p:nth-child(3) {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.BottomHeadeInfoLeftDataEl.active {
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    background: #FE8E05;
+}
+
+.BottomHeadeInfoLeftDataEl.active p {
+    color: #621402;
+}
+
+.miniZagolovok {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 49px;
+    margin-bottom: 20px;
+}
+
+.LabelYlitsa {
+    position: relative;
+    display: inline-block;
+}
+
+.LabelYlitsa:after {
+    content: '⮟';
+    position: absolute;
+    width: 37px;
+    color: #999;
+    font-weight: bold;
+    font-size: 16px;
+    right: -5px;
+    bottom: 19px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.LabelYlitsa select {
+    position: relative;
+    width: 470px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 18px;
+    margin: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    /* height: 38px; */
+}
+
+.LabelYlitsa select option {
+    background-color: #FE8E05;
+    color: #621402;
+}
+
+select option:hover,
+select option:focus,
+select option:active {
+    background: linear-gradient(#000000, #000000);
+    background-color: #000000 !important;
+    /* for IE */
+    color: #ffed00 !important;
+}
+
+select option:checked {
+    background: linear-gradient(#d6d6d6, #d6d6d6);
+    background-color: #d6d6d6 !important;
+    /* for IE */
+    color: #000000 !important;
+}
+
+/* .LabelYlitsa select option:not(:checked) {
+    background-color: #621402;
+    color: #fff;
+} */
+
+.LabelTime {
+    position: relative;
+    display: inline-block;
+}
+
+.LabelTime:after {
+    content: '⮟';
+    position: absolute;
+    width: 37px;
+    color: #999;
+    font-weight: bold;
+    font-size: 16px;
+    right: -5px;
+    bottom: 19px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.LabelTime select {
+    position: relative;
+    width: 108px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 18px;
+    margin: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    /* height: 38px; */
+}
+
+.LabelTime select option {
+    background-color: rgb(74, 74, 74);
+    color: #fff;
+}
+
+.BottomHeadeInfoCenter {
+    margin: 0 30px 0 95px;
+}
+
+.BottomHeadeInfoRightRight {
+    display: flex;
+}
+
+.BottomHeadeInfoRight {
+    margin-right: 40px;
+}
+
+.ZalMesta {
+    display: flex;
+    justify-content: center;
+}
+
+.zalContainer {
+    border-radius: 10px;
+    background: rgba(36, 36, 36, 0.18);
+    height: 686px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 0 100px;
+}
+
+.imgZal {
+    margin-top: 50px;
+}
+
+.ZalTopSidenia {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.ZalTopSideniaRyad {
+    display: flex;
+    gap: 13px;
+}
+
+.ZalBottomSidenia {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    padding-bottom: 54px;
+    margin-bottom: 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+}
+
+.ZalBottomSideniaStoronaLeft,
+.ZalBottomSideniaStoronaRight {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.ZalBottomSideniaStoronaRyad {
+    display: flex;
+    gap: 13px;
+}
+
+.ZalInfoMesta {
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    bottom: 38px;
+}
+
+.ZalInfoMestaEl {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.ZalInfoMestaEl p {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #FFF;
+    opacity: 0.5;
+}
+
+.Freely path {
+    stroke: #FFFFFF33;
+    stroke-opacity: 1;
+}
+
+.Freely rect {
+    fill: #FFFFFF33;
+    fill-opacity: 1;
+}
+
+.Selected path {
+    stroke: #FE8E05;
+    stroke-opacity: 1;
+}
+
+.Selected rect {
+    fill: #FE8E05;
+    fill-opacity: 1;
+}
+
+.Occupied path {
+    stroke: #FFFFFF0D;
+    stroke-opacity: 1;
+}
+
+.Occupied rect {
+    fill: #FFFFFF0D;
+    fill-opacity: 1;
+}
+
+.oplataContainer {
+    margin-top: 62px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.oplataContaineEl p {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Sale {
+    font-size: 52px !important;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.oplataContainer button {
+    border-radius: 5px;
+    background: #FE8E05;
+    padding: 24px 52px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+}
+
+.modal {
+    opacity: 0;
+    user-select: none;
+    width: 90%;
+    height: 90vh;
+    transition: all 0.4s;
+    background: rgba(43, 10, 2, 0.412);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+}
+
+.modal.active {
+    opacity: 1;
+    user-select: all;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.4s;
+    pointer-events: all;
+    border-radius: 30px;
+}
+
+.modalWindow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    background: #2b0a02;
+}
+
+.modal iframe {
+    width: 100%;
+    height: 100%;
+}
