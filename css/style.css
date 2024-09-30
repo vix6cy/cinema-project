@@ -322,7 +322,6 @@ rect.brone {
     }
 
     .session-cinema {
-        margin-top: 0px;
         order: 3;
     }
 
@@ -386,3 +385,36 @@ rect.brone {
         margin-top: 40px;
     }
 }
+
+@media (max-width: 375px) {
+    .session-date-item {
+        width: 70px;
+        height: 70px;
+    }
+
+    .session-month{
+        font-size: 12px;
+        margin-top: 7px;
+    }
+
+    .session-day {
+        font-size: 18px;
+    }
+
+    .session-week {
+        font-size: 12px;
+    }
+
+    .select {
+        margin-bottom: 40px;
+    }
+
+    .button {
+        font-size: 16px;
+        line-height: 2px;
+        padding: 34px 25px;
+        text-decoration: none;
+    }
+
+}
+
