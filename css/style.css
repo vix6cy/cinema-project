@@ -8,19 +8,23 @@ body {
     color: #fff;
 }
 
-.container{
+.container {
     max-width: 1170px;
     margin: auto;
     width: 90%;
 }
 
-.header{
-    background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), 
-    url('../img/bg.jpg') no-repeat center top / cover;
+.header {
+    background: linear-gradient(
+            180deg,
+            rgba(98, 20, 2, 0.31) 0%,
+            #621402 85.62%
+        ),
+        url("../img/bg.jpg") no-repeat center top / cover;
     padding-bottom: 60px;
 }
 
-.m-menu{
+.m-menu {
     display: none;
 }
 
@@ -65,7 +69,7 @@ body {
     margin-left: 11px;
 }
 
-.film{
+.film {
     margin-top: 60px;
     color: #fff;
 }
@@ -83,7 +87,7 @@ body {
     margin-bottom: 23px;
 }
 
-.film-description{
+.film-description {
     font-size: 16px;
     line-height: 150%;
     max-width: 560px;
@@ -98,7 +102,7 @@ body {
     margin: auto;
 }
 
-.film-details{
+.film-details {
     margin-top: 50px;
     display: flex;
     align-items: center;
@@ -132,8 +136,8 @@ body {
     margin-top: 62px;
     padding-top: 46px;
     padding-bottom: 63px;
-    border-top: 1px solid rgba(255, 255, 255, 0.50);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -153,7 +157,7 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.50);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     text-align: center;
     width: 90px;
     height: 90px;
@@ -180,13 +184,13 @@ body {
 }
 
 .session-date-item:hover {
-    background-color: #FE8E05;
+    background-color: #fe8e05;
     color: #621402;
 }
 
 .select {
     border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.50);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     background: rgba(255, 255, 255, 0.15);
     color: #fff;
     padding: 18px;
@@ -208,7 +212,7 @@ option {
     background: rgba(36, 36, 36, 0.18);
 }
 
-.no-fill{
+.no-fill {
     stroke: none;
 }
 
@@ -218,30 +222,30 @@ option {
     cursor: pointer;
 }
 
-path.active{
-    stroke: #FE8E05;
+path.active {
+    stroke: #fe8e05;
     stroke-opacity: 1;
 }
 
 rect.active:not(.fill-one, .fill-two, .fill-three, .brone) {
-    fill: #FE8E05 !important;
+    fill: #fe8e05 !important;
 }
 
-path.active + rect:not(.fill-one, .fill-two, .fill-three, .brone){
-    fill: #FE8E05 !important;
+path.active + rect:not(.fill-one, .fill-two, .fill-three, .brone) {
+    fill: #fe8e05 !important;
 }
 
 rect.active:not(.fill-one, .fill-two, .fill-three, .brone) + path {
-    stroke: #FE8E05;
+    stroke: #fe8e05;
     stroke-opacity: 1;
 }
 
-.fill-one{
+.fill-one {
     cursor: unset !important;
 }
 
-.fill-two{
-    fill: #FE8E05 !important;
+.fill-two {
+    fill: #fe8e05 !important;
     cursor: unset !important;
 }
 
@@ -283,7 +287,7 @@ rect.brone {
 
 .button {
     display: block;
-    background: #FE8E05;
+    background: #fe8e05;
     border-radius: 5px;
     color: #fff;
     font-weight: bold;
@@ -291,6 +295,48 @@ rect.brone {
     line-height: 21px;
     padding: 24px 52px;
     text-decoration: none;
+}
+
+.modal {
+    opacity: 0;
+    user-select: none;
+    width: 90%;
+    height: 90vh;
+    transition: all 0.4s;
+    background: rgba(76, 17, 2, 0.42);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+}
+
+.modal.active {
+    opacity: 1;
+    user-select: all;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.4s;
+    pointer-events: all;
+    border-radius: 30px;
+}
+
+.modalWindow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    background: #2b0a02;
+}
+
+.modal iframe {
+    width: 100%;
+    height: 100%;
 }
 
 @media (max-width: 1200px) {
@@ -327,6 +373,10 @@ rect.brone {
 
     .menu-item {
         margin-right: 20px;
+    }
+
+    .menu {
+        margin: 0;
     }
 }
 
@@ -384,15 +434,49 @@ rect.brone {
         margin-left: 0;
         margin-top: 40px;
     }
+
+    .session-date-item {
+        width: 20%;
+    }
+
+    .session {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .session-date {
+        width: 100%;
+    }
+
+    .session-label {
+        margin-bottom: 8px;
+    }
+
+    .session-cinema {
+        margin-top: 16px;
+    }
+
+    .select {
+        margin: 0;
+    }
+
+    .session-date {
+        margin-bottom: 16px;
+    }
+
+    .button {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    .price-tag {
+        font-size: 20px;
+        line-height: normal;
+    }
 }
 
 @media (max-width: 375px) {
-    .session-date-item {
-        width: 70px;
-        height: 70px;
-    }
-
-    .session-month{
+    .session-month {
         font-size: 12px;
         margin-top: 7px;
     }
@@ -405,16 +489,57 @@ rect.brone {
         font-size: 12px;
     }
 
-    .select {
-        margin-bottom: 40px;
+    .film-description {
+        font-size: 14px;
+    }
+
+    .film-title-small {
+        font-size: 16px;
+    }
+
+    .film-title {
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    .film-trailer {
+        margin-top: 10px;
+    }
+
+    .film-trailer svg {
+        width: 80px;
+    }
+
+    .film {
+        margin-top: 0;
+    }
+
+    .session-date-item {
+        margin: 0;
+    }
+
+    .session-date-block {
+        justify-content: space-between;
+    }
+
+    .session-date-item {
+        height: auto;
+    }
+
+    .session-day {
+        line-height: 1.3;
+    }
+
+    .price.container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
     }
 
     .button {
-        font-size: 16px;
-        line-height: 2px;
-        padding: 34px 25px;
-        text-decoration: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        padding: 12px 0;
     }
-
 }
-

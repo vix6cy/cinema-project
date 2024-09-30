@@ -20,3 +20,7 @@ menuButton.addEventListener('click', () => {
     console.log('Кликнули по меню');
     menu.classList.toggle('is-open')
 })
+
+function activeModal(){
+    document.querySelector('.modal').classList.toggle('active');
+}
